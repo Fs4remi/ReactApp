@@ -1,5 +1,5 @@
 import React from "react";
-import headerPhoto from "./public/header.png"
+import headerPhoto from "./header.png"
 
 function Home(props){
     return <main>

@@ -6,13 +6,13 @@ import About from './About';
 import Members from './Members';
 import Activity from './Activities';
 
-import users from './public/clubUsersHash.json';
-import events from './public/eventData.json';
+import users from './clubUsersHash.json';
+import events from './eventData.json';
 
 class App extends React.Component {
     constructor(props) {
         super(props); 
-        this.state = {show: "Home"};
+        this.state = {show: 'Home'};
     }
     stateChanger(id){
         console.log(id);

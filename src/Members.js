@@ -1,5 +1,4 @@
 import React from 'react';
-import { precompileString } from 'nunjucks';
 
 //sorts them by their last name and then produces a numbered list or table of members and their emails. 
 function Members(props){
@@ -12,15 +11,7 @@ function Members(props){
     let numberedList = props.users.map((user, index) => {
         return <li key={user.email} style = {{color: 'white'}}> {user.firstName}  {user.lastName}  {user.email} </li>
     });
-    console.log(typeof props.users);
-    [
-        {
-          "firstName": "Orval",
-          "lastName": "Dotson",
-          "email": "kazatske2053@outlook.com",
-          "password": "$2a$15$JmZ1hLY4rqhe/LDWBzs20.bTXQm29lI5cebKf3xI.2RTTQ4QkPTKa",
-          "role": "admin"
-        }]
+    
     return <main>
         <ol>{numberedList}</ol>
     </main>
