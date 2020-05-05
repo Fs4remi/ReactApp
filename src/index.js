@@ -9,14 +9,14 @@ import Activity from './Activities';
 import AdminActivity from './AdminActivity';
 import Login from './Login';
 
-import users from './public/clubUsersHash.json';
-import events from './public/eventData.json';
+import users from './clubUsersHash.json';
+import events from './eventData.json';
 
 class App extends React.Component {
     constructor(props) {
         super(props); 
         this.state = {
-            show: 'AA',
+            show: 'Home',
             role: 'guest',
             user: ''
         };
@@ -94,6 +94,7 @@ class App extends React.Component {
         return( 
             <section id= 'buttons'> 
                 <h3 style={{fontFamily: 'sans-serif'}}>Where would you like to go next?</h3> 
+                <button onClick={this.stateChanger.bind(this,'Home')}>Home Page</button>
                 <button onClick={this.stateChanger.bind(this,'About')}>About Page</button> 
                 <button onClick={this.stateChanger.bind(this, 'Log')}>Login Page</button>
             </section>); 
@@ -102,10 +103,11 @@ class App extends React.Component {
         return( 
             <section id= 'buttons'> 
                 <h3 style={{fontFamily: 'sans-serif'}}>Where would you like to go next?</h3>
+                <button onClick={this.stateChanger.bind(this,'Home')}>Home Page</button>
                 <button onClick={this.stateChanger.bind(this,'Members')}>Members page</button>
                 <button onClick={this.stateChanger.bind(this,'About')}>About Page</button>
+                <button onClick={this.stateChanger.bind(this,'AA')}>Modify Activities</button>
                 <button onClick={this.stateChanger.bind(this, 'Activity')}>Activity Page</button>
-                <button onClick={this.stateChanger.bind(this, 'Log')}>Login Page</button>
                 <button onClick={this.logout}>Logout</button>
             </section>); 
     }
@@ -113,9 +115,9 @@ class App extends React.Component {
         return( 
             <section id= 'buttons'> 
                 <h3 style={{fontFamily: 'sans-serif'}}>Where would you like to go next?</h3> 
+                <button onClick={this.stateChanger.bind(this,'Home')}>Home Page</button>
                 <button onClick={this.stateChanger.bind(this,'About')}>About Page</button>
                 <button onClick={this.stateChanger.bind(this, 'Activity')}>Activity Page</button>
-                <button onClick={this.stateChanger.bind(this, 'Log')}>Login Page</button>
                 <button onClick={this.logout}>Logout</button>
             </section>); 
     }

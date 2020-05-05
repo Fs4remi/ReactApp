@@ -16,14 +16,14 @@ class Login extends React.Component {
         });
     };
     
-    handleLogin = () => { // takes away the need for binding
+    handleLogin = () => { 
         const {email, password} = this.state;
         if (email.length !== 0 && password.length !== 0){
             if(email === 'admin@email.org'){
-                this.props.emit('Fatemeh','admin');
+                this.props.emit('Queen of beauty','admin');
             }
             else if(email === 'member@email.org'){
-                this.props.emit('Fatemeh','member');
+                this.props.emit('Queen of beauty','member');
             }
         } 
         else{
