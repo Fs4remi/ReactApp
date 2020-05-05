@@ -1,8 +1,8 @@
 import React from "react";
-import headerPhoto from "./header.png"
+import headerPhoto from "./public/header.png"
 
 function Home(props){
-    return <main>
+    return <main className = 'bodyStyle'>
             <figure className="photos">
                 <img src = {headerPhoto} style={{width : '700px'}} alt = "code"/>
             </figure>

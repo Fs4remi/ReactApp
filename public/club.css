@@ -9,15 +9,16 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    align-self: center;
 }
 
-main {
+.bodyStyle {
 	background-color: rgb(123, 76, 167);
 	border: 10px solid #5F9EA0;
-	margin: 50px;
+	margin: 10px;
     padding: 1em;
-    width: 800px;   
-
+    width: 800px;    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,30 +28,51 @@ main {
     width: 800px;
 }
 
-h1{
-	text-align: center;
-	font-size: 50px;
-}
-
 footer{
 	text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#table{
+    width: 600px;
+    background-color: #DB7093;
+    border-collapse: collapse;
+    color: black;
+    text-align: center;
+}
+
+th, td{
+	border: 3px solid #EE82EE;
+	height: 50px;
+}  
+
+th{
     font-size: 20px;
 }
 
 td{
-	border: 3px solid #191970;
-	height: 50px;
+    font-size: 15px;
 }
 
-
-#button {
-    font-size: 15px;
+#buttons {
+    font-size: 15px;  
     font-weight: bold;
-    grid-area: button;
-    width: 60%;
+    margin: 10px;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
     justify-self: center;
     font: inherit;
-    padding: 0.5rem 1.5rem;
-    border: 5px dotted purple;
+    border: 5px dotted rgb(211, 224, 25);
     border-radius: 6px;
+}
+
+input:invalid {
+    background-color:#FF7F50;
+}
+
+input:valid {
+    background-color: #FFD700;
 }
