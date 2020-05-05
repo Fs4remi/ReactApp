@@ -12,7 +12,8 @@ function Members(props){
         return <li key={user.email} style = {{color: 'white'}}> {user.firstName}  {user.lastName}  {user.email} </li>
     });
     
-    return <main>
+    return <main className = 'bodyStyle'>
+        <h1 id = 'pageHeading' >List of wonderful members</h1>
         <ol>{numberedList}</ol>
     </main>
 }
